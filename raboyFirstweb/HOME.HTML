@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   <style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(gvvvvb.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    backdrop-filter: blur(3px);
+}
+.login-wrapper {
+    width: 100%;
+    max-width: 700%;
+    padding: 20px;
+    
+}
+/* Login container */
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Form inputs */
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #9b59b6;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+/* Login button (styled link) */
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #9b59b6;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #8e44ad;
+}
+
+/* Links */
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.links .link {
+    color: #9b59b6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links .link:hover {
+    text-decoration: underline;
+    color: #8e44ad;
+}
+
+.links span {
+    margin: 0 8px;
+    color: #aaa;
+}
+</style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Please login to your account</p>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <!-- Changed button to a link -->
+                <a href="WEBSITE.HTML" class="login-button">Login</a>
+            </form>
+            <div class="links">
+                <a href="forgot-password.html" class="link">Forgot Password?</a>
+                <span>|</span>
+                <a href="signup.html" class="link">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light of the World Portfolio</title>
+<style>
+    /* -------- Root Variables -------- */
+    :root {
+        --primary: #FFD700;  /* Golden light */
+        --secondary: #1F3B4D; /* Dark navy */
+        --accent: #FFF8E7;   /* Soft light background */
+        --text: #2C3E50;
+        --radius: 12px;
+        --shadow: rgba(0,0,0,0.1);
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+        background: var(--accent);
+        color: var(--text);
+        line-height: 1.7;
+    }
+
+    /* -------- Header / Hero -------- */
+    header {
+        background: linear-gradient(rgba(255,215,0,0.3), rgba(255,215,0,0.1)), url('https://source.unsplash.com/1600x600/?light,sun') no-repeat center/cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--secondary);
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        opacity: 0.85;
+    }
+
+    header a.cta-btn {
+        margin-top: 25px;
+        background: var(--primary);
+        color: var(--secondary);
+        padding: 14px 30px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    header a.cta-btn:hover {
+        background: #FFC700;
+    }
+
+    /* -------- Container -------- */
+    .container {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    /* -------- About / Values -------- */
+    .about {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        color: var(--secondary);
+        margin-bottom: 15px;
+    }
+
+    .about p {
+        font-size: 1rem;
+        color: #34495E;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* -------- Portfolio Cards -------- */
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        background: white;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 20px var(--shadow);
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px var(--shadow);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    /* -------- Goals Section -------- */
+    .goals {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+
+    .goal-box {
+        flex: 1 1 280px;
+        background: white;
+        padding: 25px;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 15px var(--shadow);
+        text-align: center;
+        transition: 0.25s;
+    }
+
+    .goal-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .goal-box h3 {
+        color: var(--secondary);
+        margin-bottom: 10px;
+    }
+
+    .goal-box p {
+        font-size: 0.95rem;
+        color: #444;
+    }
+
+    /* -------- Call to Action -------- */
+    .cta-section {
+        background: var(--secondary);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-radius: var(--radius);
+        margin-bottom: 60px;
+        box-shadow: 0 6px 20px var(--shadow);
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .cta-section a {
+        background: var(--primary);
+        color: var(--secondary);
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: var(--radius);
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .cta-section a:hover {
+        background: #FFC700;
+    }
+
+    /* -------- Footer -------- */
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 0.95rem;
+        color: #777;
+        background: #ecf0f1;
+    }
+
+    /* -------- Responsive -------- */
+    @media(max-width: 900px) {
+        .feature {
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: 600px) {
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Header / Hero -->
+<header>
+    <h1>Light of the World Portfolio</h1>
+    <p>Sharing my journey, values, and work inspired by the guiding light of faith, integrity, and service.</p>
+    <a href="#portfolio" class="cta-btn">View My Work</a>
+
+</header>
+
+<!-- Main Container -->
+<div class="container">
+
+    <!-- About Section -->
+    <div class="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated student and community advocate committed to living out my values through projects, service, and creativity. My guiding principle is to be a “light in the world,” inspiring others to act with kindness, integrity, and faith.</p>
+    </div>
+
+    <!-- Portfolio / Work -->
+    <h2 class="section-title" id="portfolio">Portfolio</h2>
+    <div class="portfolio">
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?community,project" alt="Project 1">
+            <div class="card-content">
+                <h3>Community Garden Project</h3>
+                <p>Designed and implemented a community garden to promote sustainable living and healthy nutrition.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?charity,donation" alt="Project 2">
+            <div class="card-content">
+                <h3>Charity Fundraising Drive</h3>
+                <p>Organized a charity drive raising funds and donations for local families in need.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?school,volunteer" alt="Project 3">
+            <div class="card-content">
+                <h3>Volunteer Tutoring Program</h3>
+                <p>Started a tutoring program to help fellow students excel academically and gain confidence.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goals Section -->
+    <h2 class="section-title">My Goals</h2>
+    <div class="goals">
+        <div class="goal-box">
+            <h3>Inspire Others</h3>
+            <p>Lead by example and encourage peers to act with integrity and compassion.</p>
+        </div>
+        <div class="goal-box">
+            <h3>Serve the Community</h3>
+            <p>Engage in meaningful service projects that impact lives positively.</p>
+        </div>
+        <div class="goal-box">
+            <h3>Grow Spiritually</h3>
+            <p>Deepen faith and values while sharing them through daily actions.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+        <h2>Connect and Collaborate</h2>
+        <a href="#">Contact Me</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 Light of the World Portfolio | Guiding Values Through Action
+</footer>
+
+</body>
+</html>

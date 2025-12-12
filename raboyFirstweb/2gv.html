@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service Initiative</title>
+    <style>
+        /* ---------- Root Variables ---------- */
+        :root {
+            --primary: #2C3E50;
+            --secondary: #2980B9;
+            --accent: #EAF2F8;
+            --text: #34495E;
+            --bg: #F8F9FA;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        /* ---------- Hero Button ---------- */
+        header a.cta-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: var(--secondary);
+            color: white;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        header a.cta-btn:hover {
+            background: #1F618D;
+        }
+
+        /* ---------- Container ---------- */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* ---------- Section Titles ---------- */
+        h2.section-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            border-left: 6px solid var(--secondary);
+            padding-left: 12px;
+        }
+
+        /* ---------- Campaign Cards ---------- */
+        .campaigns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            background: var(--secondary);
+            padding: 10px 20px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        .card-content a:hover {
+            background: #1F618D;
+        }
+
+        /* ---------- Info Section ---------- */
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .info-section .info-box {
+            flex: 1;
+            min-width: 280px;
+            background: var(--accent);
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: 0.25s;
+        }
+
+        .info-section .info-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .info-box h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .info-box p {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media(max-width: 700px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .info-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Helping Hands Initiative</h1>
+    <p>Empowering our community through service, advocacy, and action.</p>
+    <a href="#campaigns" class="cta-btn">Explore Our Campaigns</a>
+</header>
+
+<!-- Main Container -->
+<div class="container">
+
+    <!-- Campaign Section -->
+    <h2 class="section-title" id="campaigns">Our Current Campaigns</h2>
+    <div class="campaigns">
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?community,volunteer" alt="Community Cleanup">
+            <div class="card-content">
+                <h3>Community Cleanup</h3>
+                <p>Join us as we clean parks and streets to promote a healthier and greener neighborhood.</p>
+                <a href="#">Get Involved</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?charity,donation" alt="Charity Drive">
+            <div class="card-content">
+                <h3>Charity Drive</h3>
+                <p>Help us collect food, clothes, and supplies for families in need this season.</p>
+                <a href="#">Contribute Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/400x250/?tree,planting" alt="Environmental Campaign">
+            <div class="card-content">
+                <h3>Tree Planting</h3>
+                <p>Participate in planting trees to improve air quality and bring life to our community parks.</p>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+        <div class="info-box">
+            <h3>Our Mission</h3>
+            <p>To foster a culture of service, compassion, and environmental awareness within our community.</p>
+        </div>
+        <div class="info-box">
+            <h3>Get Involved</h3>
+            <p>Whether you want to volunteer, donate, or advocate, there’s a place for you to contribute to positive change.</p>
+        </div>
+        <div class="info-box">
+            <h3>Upcoming Events</h3>
+            <p>Stay informed about workshops, charity events, cleanups, and campaigns happening in your area.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 Helping Hands Initiative | Building stronger communities together
+</footer>
+
+</body>
+</html>
+
+
+
+    

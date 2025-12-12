@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith & Technology</title>
+<style>
+    /* -------- Root Variables -------- */
+    :root {
+        --primary: #1F3B4D;     /* Deep navy */
+        --secondary: #F39C12;   /* Golden accent */
+        --accent: #EAF2F8;      /* Soft background */
+        --text: #2C3E50;        /* Main text */
+        --radius: 12px;
+        --shadow: rgba(0,0,0,0.1);
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+        background: var(--accent);
+        color: var(--text);
+        line-height: 1.7;
+    }
+
+    /* -------- Header / Hero -------- */
+    header {
+        background: linear-gradient(rgba(31,59,77,0.7), rgba(31,59,77,0.7)), url('https://source.unsplash.com/1600x600/?technology,faith') no-repeat center/cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        opacity: 0.9;
+    }
+
+    header a.cta-btn {
+        margin-top: 25px;
+        background: var(--secondary);
+        color: white;
+        padding: 14px 30px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    header a.cta-btn:hover {
+        background: #E67E22;
+    }
+
+    /* -------- Container -------- */
+    .container {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    /* -------- Section Titles -------- */
+    h2.section-title {
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 30px;
+        border-left: 6px solid var(--secondary);
+        padding-left: 12px;
+    }
+
+    /* -------- Features / Benefits Section -------- */
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    .feature-card {
+        background: white;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 20px var(--shadow);
+        padding: 25px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px var(--shadow);
+    }
+
+    .feature-card h3 {
+        color: var(--secondary);
+        margin-bottom: 12px;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .feature-card img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    /* -------- Examples Section -------- */
+    .examples {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    .example-box {
+        flex: 1 1 280px;
+        background: var(--accent);
+        padding: 25px;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 15px var(--shadow);
+        transition: 0.25s;
+    }
+
+    .example-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .example-box h3 {
+        color: var(--primary);
+        margin-bottom: 12px;
+    }
+
+    .example-box p {
+        font-size: 0.95rem;
+        color: #444;
+    }
+
+    /* -------- Call to Action -------- */
+    .cta-section {
+        background: var(--primary);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-radius: var(--radius);
+        margin-bottom: 60px;
+        box-shadow: 0 6px 20px var(--shadow);
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .cta-section a {
+        background: var(--secondary);
+        color: white;
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: var(--radius);
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .cta-section a:hover {
+        background: #E67E22;
+    }
+
+    /* -------- Footer -------- */
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 0.95rem;
+        color: #777;
+        background: #ecf0f1;
+    }
+
+    /* -------- Responsive -------- */
+    @media(max-width: 900px) {
+        .examples {
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: 600px) {
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Header / Hero -->
+<header>
+    <h1>Faith & Technology Integration</h1>
+    <p>Explore how technology can amplify positivity, share spiritual messages, and inspire communities online.</p>
+    <a href="#features" class="cta-btn">Learn More</a>
+</header>
+
+<!-- Main Container -->
+<div class="container">
+
+    <!-- Features Section -->
+    <h2 class="section-title" id="features">Ways Technology Spreads Positivity</h2>
+    <div class="features">
+        <div class="feature-card">
+            <img src="https://source.unsplash.com/80x80/?social-media,peace" alt="Social Media">
+            <h3>Social Media Positivity</h3>
+            <p>Sharing uplifting messages, prayers, and motivational content on social platforms.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://source.unsplash.com/80x80/?app,education" alt="Apps">
+            <h3>Faith-Based Apps</h3>
+            <p>Using apps for daily devotionals, meditation, and community engagement in spiritual growth.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://source.unsplash.com/80x80/?video,community" alt="Videos">
+            <h3>Inspirational Videos</h3>
+            <p>Creating and sharing short videos that teach kindness, love, and ethical digital behavior.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://source.unsplash.com/80x80/?blog,writing" alt="Blogs">
+            <h3>Blogs & Articles</h3>
+            <p>Writing blogs to educate readers about digital ethics, hope, and spiritual lessons.</p>
+        </div>
+    </div>
+
+    <!-- Examples Section -->
+    <h2 class="section-title">Real-Life Examples</h2>
+    <div class="examples">
+        <div class="example-box">
+            <h3>Online Prayer Communities</h3>
+            <p>Joining platforms that allow people to pray together, support one another, and share gratitude.</p>
+        </div>
+        <div class="example-box">
+            <h3>Educational Webinars</h3>
+            <p>Hosting webinars teaching ethical digital behavior and spiritual growth for students and youth.</p>
+        </div>
+        <div class="example-box">
+            <h3>Positive Challenge Campaigns</h3>
+            <p>Running campaigns online encouraging acts of kindness, generosity, and ethical engagement.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+        <h2>Use Technology to Spread Light</h2>
+        <a href="#">Join Our Movement</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 Faith & Technology Initiative | Spreading Positivity and Inspiration Online
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith & Values Web Project</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4a90e2, #357ab7);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background: #4a90e2;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1523473827532-3a5b3f4d0f57?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e04f4f;
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.feature {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    color: #4a90e2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>TANGGUB CITY GLOBAL COLLEGE</h2>
+            <p>“Una ang Ginoo” - God First | Light of the World</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index .html">Personal Reflection</a></li>
+                <li><a href="2gv.html">Community Service & Advocacy</a></li>
+                <li><a href="3GV.HTML">Inspirational Portfolio</a></li>
+                <li><a href="4GV.HTML">Educational / Informational</a></li>
+                <li><a href="5GV.HTML">Faith & Technology Integration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to Our Faith-Centered Web Project</h2>
+                <p>Explore creativity, ethical responsibility, and the integration of faith and technology.</p>
+                <a href="WEBSITE.HTML" class="btn">Start Exploring</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <h3>Personal Reflection</h3>
+                    <p>Share your thoughts and personal experiences that highlight your journey of faith.</p>
+                </div>
+                <div class="feature">
+                    <h3>Community Service</h3>
+                    <p>Discover projects and advocacies that help uplift the community through meaningful actions.</p>
+                </div>
+                <div class="feature">
+                    <h3>Inspirational Portfolio</h3>
+                    <p>Showcase creative works that reflect positivity, ethics, and faith-inspired inspiration.</p>
+                </div>
+                <div class="feature">
+                    <h3>Educational Page</h3>
+                    <p>Learn about technology, ethics, and digital responsibility in a faith-centered perspective.</p>
+                </div>
+                <div class="feature">
+                    <h3>Faith & Technology</h3>
+                    <p>Understand how faith and technology intersect to inspire, inform, and guide responsible digital expression.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TCGC ICS Web Project | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
